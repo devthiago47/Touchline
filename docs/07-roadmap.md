@@ -27,7 +27,7 @@ Preparação do Ambiente
 - Prisma
 - Git
 
-Status: ⏳
+Status: ✅ Concluído
 
 ---
 

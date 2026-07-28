@@ -504,32 +504,74 @@ O projeto será construído visando expansão futura.
 
 ---
 
+Decisão 009
+
+O modelo de clube será preparado para suportar clubes oficiais e clubes personalizados no futuro, sem criar sistemas separados.
+
+---
+
+Decisão 010
+
+O motor de partida considerará a adequação de posição dos jogadores.
+
+Jogadores escalados fora de suas posições terão redução de eficiência, afetando o overall efetivo utilizado na simulação das partidas.
+
+---
+
+Decisão 011
+
+A entidade Club não armazenará cidade no modelo inicial.
+
+O clube possuirá um estádio associado, pois ele poderá influenciar futuramente:
+
+capacidade de público;
+renda de partidas;
+mando de campo;
+reputação;
+melhorias estruturais.
+
+---
+
+Decisão 012 
+
+O Touchline utilizará um único orçamento por clube.
+
+O valor financeiro do clube será o mesmo valor disponível para o jogador utilizar durante a carreira.
+
+---
+
+Decisão 013
+
+O sistema de títulos da carreira armazenará conquistas por competição, contendo o nome do troféu e a quantidade de vezes conquistada.
+
+---
+
 # ETAPA ATUAL
 
 Versão:
 
-v0.1.0
+v0.2.0
 
 Etapa:
 
-2
+3
 
 Status:
 
-Preparação e configuração do ambiente de desenvolvimento
+Implementação da Base do Sistema
 
 Situação:
 
-Concluída.
+Em andamento.
 
 ---
 
 
 # PRÓXIMA TAREFA
 
-Etapa 3.
+Etapa 4.
 
-Banco de Dados
+...
 
 ---
 
