@@ -512,11 +512,11 @@ v0.1.0
 
 Etapa:
 
-1
+2
 
 Status:
 
-Documentação
+Preparação e configuração do ambiente de desenvolvimento
 
 Situação:
 
@@ -524,28 +524,12 @@ Concluída.
 
 ---
 
-# ETAPA 1.5 (PLANEJADA)
-
-Antes de iniciar a programação, deverão ser definidos:
-
-- Modelo completo do banco de dados (entidades e relacionamentos).
-- Estrutura definitiva de pastas do frontend e backend.
-- Organização das rotas da API.
-- Fluxo completo de criação e carregamento de uma carreira.
-- Fluxo completo de uma temporada.
-- Estrutura do sistema de saves.
-- Algoritmo do motor de simulação em pseudocódigo.
-- Convenções de nomenclatura para arquivos, componentes e serviços.
-
-Somente após a conclusão dessa etapa será iniciado o desenvolvimento do código.
-
----
 
 # PRÓXIMA TAREFA
 
-Etapa 2.
+Etapa 3.
 
-Preparação do ambiente de desenvolvimento.
+Banco de Dados
 
 ---
 
