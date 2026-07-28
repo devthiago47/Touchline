@@ -77,6 +77,39 @@ Esses dados não serão modificados durante uma carreira.
 
 ---
 
+# Autenticação OAuth
+
+O player poderá entrar com suan conta Google ou Github para guardar seus saves. 
+Assim ele não perderá o progresso caso o navegador atualize
+
+Abrir jogo
+↓
+
+Escolher modo de acesso
+
+↓
+
+Google
+GitHub
+Visitante
+
+↓
+
+Menu inicial
+
+↓
+
+Nova carreira
+
+↓
+
+Continuar carreira
+
+O jogador poderá também entrar como visitante.
+Dessa forma, ele não poderá guardar seus saves, apenas testar o jogo de maneira mais simples e prática
+
+---
+
 # Save da Carreira
 
 Cada nova carreira criará um Save independente.

@@ -129,6 +129,12 @@ Status: ⏳
 
 ---
 
+# Etapa 11
+
+Autenticação e sicronização de saves
+
+---
+
 # Versão MVP
 
 Ao final da Etapa 10, o Touchline deverá possuir uma versão jogável completa.

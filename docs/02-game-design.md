@@ -10,6 +10,14 @@ O foco do jogo não é controlar os atletas durante a partida, mas sim tomar dec
 
 ---
 
+# Fluxo de entrada no jogo
+
+Login Google;
+Login GitHub;
+Entrar como visitante.
+
+---
+
 # Ciclo principal do jogo
 
 Toda a carreira seguirá o mesmo fluxo.

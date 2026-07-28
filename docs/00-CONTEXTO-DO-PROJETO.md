@@ -546,6 +546,15 @@ O sistema de títulos da carreira armazenará conquistas por competição, conte
 
 ---
 
+Decisão 014 — Sistema de autenticação e saves
+
+O Touchline oferecerá autenticação via OAuth (Google e GitHub) e modo visitante.
+Usuários autenticados terão suas carreiras armazenadas na nuvem e vinculadas à sua conta.
+Usuários visitantes terão carreiras armazenadas apenas localmente no navegador.
+A autenticação será tratada como um módulo independente, preservando a separação entre frontend, backend e sistema de saves.
+
+---
+
 # ETAPA ATUAL
 
 Versão:

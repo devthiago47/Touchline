@@ -50,6 +50,12 @@ Serão armazenados:
 
 # Principais Entidades
 
+## User
+
+Ela armazenará os saves dos players com segurança
+
+---
+
 ## Liga
 
 Informações:

@@ -1,19 +1,15 @@
-import type { Club } from "./club";
+
 
 export interface Career {
   id: string;
 
   managerName: string;
 
-  club: Club;
+  clubId: string;
 
   currentSeason: number;
 
-  trophies: Trophy[];
-}
+  trophies: string[];
 
-export interface Trophy {
-  competitionName: string;
-
-  amount: number;
+  createdAt: Date;
 }
