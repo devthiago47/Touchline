@@ -15,5 +15,5 @@ export interface Club {
 
   budget: number;
 
-  reputation: number;
+  overall: number;
 }

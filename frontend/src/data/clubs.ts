@@ -23,7 +23,7 @@ export const clubs: Club[] = [
 
     budget: 50000000,
 
-    reputation: 85,
+    overall: 84,
   },
 
   {
@@ -41,7 +41,7 @@ export const clubs: Club[] = [
 
     budget: 45000000,
 
-    reputation: 84,
+    overall: 83,
   },
 
   {
@@ -59,6 +59,6 @@ export const clubs: Club[] = [
 
     budget: 150000000,
 
-    reputation: 95,
+    overall: 95,
   },
 ];

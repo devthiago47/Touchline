@@ -2,20 +2,56 @@ import type { Club } from "@/types/club";
 
 interface ClubCardProps {
   club: Club;
-  onSelect: (clubId: string) => void;
 }
+
+function getStars(overall: number) {
+  if (overall >= 85) return "★★★★★";
+
+  if (overall >= 80) return "★★★★☆";
+
+  if (overall >= 75) return "★★★★";
+
+  if (overall >= 70) return "★★★☆";
+
+  if (overall >= 65) return "★★★";
+
+  if (overall >= 60) return "★★☆";
+
+  if (overall >= 55) return "★★";
+
+  if (overall >= 50) return "★☆";
+
+  return "★";
+}
+
 
 export default function ClubCard({
   club,
-  onSelect,
 }: ClubCardProps) {
+
   return (
-    <button onClick={() => onSelect(club.id)}>
-      <h3>{club.name}</h3>
+    <div>
 
-      <p>{club.country}</p>
+      <div>
+        ⚽
+      </div>
 
-      <small>{club.stadium}</small>
-    </button>
+
+      <h2>
+        {club.name}
+      </h2>
+
+
+      <p>
+        {getStars(club.overall)}
+      </p>
+
+
+      <small>
+        Overall: {club.overall}
+      </small>
+
+
+    </div>
   );
 }
