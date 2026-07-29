@@ -5,9 +5,17 @@ export const leagueService = {
     return Promise.resolve(leagues);
   },
 
+  getAllSync() {
+    return leagues;
+  },
+
   async getById(id: string) {
     return Promise.resolve(
       leagues.find((league) => league.id === id)
     );
+  },
+
+  getByIdSync(id: string) {
+    return leagues.find((league) => league.id === id);
   },
 };

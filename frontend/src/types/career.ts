@@ -1,4 +1,4 @@
-
+import type { Season } from "./season";
 
 export interface Career {
   id: string;
@@ -7,9 +7,9 @@ export interface Career {
 
   clubId: string;
 
-  currentSeason: number;
-
   trophies: string[];
+
+  currentSeason: Season;
 
   createdAt: Date;
 }

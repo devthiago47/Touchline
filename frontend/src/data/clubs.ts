@@ -45,6 +45,24 @@ export const clubs: Club[] = [
   },
 
   {
+    id: "club_corinthians",
+
+    name: "Corinthians",
+
+    shortName: "COR",
+
+    country: "Brasil",
+
+    stadium: "Neo Química Arena",
+
+    squad: [],
+
+    budget: 40000000,
+
+    overall: 80,
+  },
+
+  {
     id: "club_real_madrid",
 
     name: "Real Madrid",
@@ -60,5 +78,23 @@ export const clubs: Club[] = [
     budget: 150000000,
 
     overall: 95,
+  },
+
+  {
+    id: "club_barcelona",
+
+    name: "Barcelona",
+
+    shortName: "BAR",
+
+    country: "Espanha",
+
+    stadium: "Spotify Camp Nou",
+
+    squad: [],
+
+    budget: 130000000,
+
+    overall: 93,
   },
 ];

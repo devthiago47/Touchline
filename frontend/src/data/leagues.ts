@@ -12,6 +12,7 @@ export const leagues: League[] = [
     clubs: [
       clubs[0],
       clubs[1],
+      clubs[2],
     ],
 
     numberOfTeams: 20,
@@ -25,7 +26,8 @@ export const leagues: League[] = [
     country: "Espanha",
 
     clubs: [
-      clubs[2],
+      clubs[3],
+      clubs[4],
     ],
 
     numberOfTeams: 20,

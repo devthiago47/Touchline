@@ -117,6 +117,8 @@ export default function NewCareer() {
 
       managerName: "Treinador",
 
+      leagueId: currentLeague.id,
+
       clubId: currentClub.id,
 
     });
