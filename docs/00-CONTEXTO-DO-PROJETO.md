@@ -199,13 +199,13 @@ Arquivos atuais:
 
 08-mvp.md
 
-09-changelog.md (ainda será criado)
+09-changelog.md
 
 ---
 
 # GAMEPLAY
 
-Fluxo da carreira.
+Fluxo da carreira:
 
 Nova carreira
 
@@ -216,6 +216,10 @@ Escolher liga
 ↓
 
 Escolher clube
+
+↓
+
+Gerar temporada
 
 ↓
 
@@ -255,15 +259,11 @@ Nova temporada
 
 O Menu Principal possuirá:
 
-Campo de futebol com escalação.
-
-Informações rápidas.
-
-Próxima partida.
-
-Últimos resultados.
-
-Objetivos da diretoria.
+- Campo de futebol com escalação
+- Informações rápidas
+- Próxima partida
+- Últimos resultados
+- Objetivos da diretoria
 
 Menus:
 
@@ -278,6 +278,69 @@ Menus:
 
 ---
 
+# SISTEMA DE CALENDÁRIO
+
+Status:
+
+Implementado no frontend.
+
+Estrutura atual:
+
+
+Career
+
+↓
+
+Season
+
+↓
+
+Round[]
+
+↓
+
+Fixture[]
+
+
+Uma temporada agora é organizada por rodadas.
+
+Cada rodada possui seus confrontos.
+
+Exemplo:
+
+
+Temporada 2026
+
+Rodada 1
+
+Flamengo x Palmeiras
+
+Corinthians x Santos
+
+Rodada 2
+
+
+---
+
+# GERAÇÃO DE CALENDÁRIO
+
+Implementado:
+
+- Algoritmo Round Robin.
+- Geração automática de confrontos.
+- Controle de rodadas.
+- Um clube não enfrenta ele mesmo.
+- Cada clube possui apenas um jogo por rodada.
+- Suporte para quantidade ímpar de clubes utilizando clube de folga.
+- Embaralhamento dos clubes antes da geração.
+- Sorteio do mando de campo.
+
+O calendário é responsável somente pela competição.
+
+Ele não sabe qual clube pertence ao jogador.
+
+---
+
 # MOTOR DA PARTIDA (MVP)
 
 Primeira versão.
@@ -286,7 +349,7 @@ O resultado dependerá apenas de:
 
 - Overall médio da equipe.
 - Tática escolhida.
-- Mando de campo
+- Mando de campo.
 
 No futuro poderão ser adicionados:
 
@@ -325,17 +388,12 @@ Contém apenas alterações da carreira.
 
 Exemplos:
 
-Transferências.
-
-Overall atualizado.
-
-Saldo financeiro.
-
-Classificação.
-
-Calendário.
-
-Histórico.
+- Transferências
+- Overall atualizado
+- Saldo financeiro
+- Classificação
+- Calendário
+- Histórico
 
 ---
 
@@ -343,23 +401,15 @@ Histórico.
 
 O MVP deverá permitir:
 
-Escolher liga.
-
-Escolher clube.
-
-Disputar temporadas.
-
-Treinar jogadores.
-
-Comprar jogadores.
-
-Vender jogadores.
-
-Disputar competições.
-
-Salvar carreira.
-
-Continuar carreira.
+- Escolher liga.
+- Escolher clube.
+- Disputar temporadas.
+- Treinar jogadores.
+- Comprar jogadores.
+- Vender jogadores.
+- Disputar competições.
+- Salvar carreira.
+- Continuar carreira.
 
 ---
 
@@ -401,28 +451,6 @@ Responsável por:
 - Revisões.
 - Explicações.
 - Planejamento.
-
----
-
-# REGRAS DO CHATGPT
-
-Ao continuar este projeto:
-
-Nunca alterar tecnologias sem justificativa.
-
-Nunca alterar arquitetura sem justificativa.
-
-Nunca criar código antes da documentação.
-
-Sempre respeitar as decisões já tomadas.
-
-Sempre priorizar código limpo.
-
-Sempre explicar decisões importantes.
-
-Sempre manter compatibilidade com versões anteriores.
-
-Agir como Tech Lead do projeto.
 
 ---
 
@@ -524,15 +552,15 @@ A entidade Club não armazenará cidade no modelo inicial.
 
 O clube possuirá um estádio associado, pois ele poderá influenciar futuramente:
 
-capacidade de público;
-renda de partidas;
-mando de campo;
-reputação;
-melhorias estruturais.
+- capacidade de público;
+- renda de partidas;
+- mando de campo;
+- reputação;
+- melhorias estruturais.
 
 ---
 
-Decisão 012 
+Decisão 012
 
 O Touchline utilizará um único orçamento por clube.
 
@@ -549,9 +577,41 @@ O sistema de títulos da carreira armazenará conquistas por competição, conte
 Decisão 014 — Sistema de autenticação e saves
 
 O Touchline oferecerá autenticação via OAuth (Google e GitHub) e modo visitante.
+
 Usuários autenticados terão suas carreiras armazenadas na nuvem e vinculadas à sua conta.
+
 Usuários visitantes terão carreiras armazenadas apenas localmente no navegador.
+
 A autenticação será tratada como um módulo independente, preservando a separação entre frontend, backend e sistema de saves.
+
+---
+
+Decisão 015 — Sistema de calendário
+
+O Touchline utilizará um sistema de calendário baseado em rodadas.
+
+A estrutura oficial será:
+
+Season
+
+↓
+
+Round[]
+
+↓
+
+Fixture[]
+
+
+O calendário será gerado automaticamente através de algoritmo Round Robin.
+
+A geração deverá:
+
+- criar confrontos entre todos os clubes;
+- evitar confrontos contra o próprio clube;
+- controlar rodadas;
+- definir mandos;
+- permitir expansão futura para turno e returno.
 
 ---
 
@@ -563,24 +623,42 @@ v0.2.0
 
 Etapa:
 
-3
+4
 
-Status:
+Nome:
 
 Implementação da Base do Sistema
 
-Situação:
+Status:
 
 Em andamento.
 
----
+Concluído:
 
+✅ Seleção de liga  
+✅ Seleção de clube  
+✅ Criação de carreira  
+✅ Dashboard inicial  
+✅ Estrutura Season/Round/Fixture  
+✅ Geração automática de calendário  
+✅ Round Robin inicial  
+
+---
 
 # PRÓXIMA TAREFA
 
-Etapa 4.
+Etapa 4.4
 
-...
+Sistema de avanço de calendário.
+
+Objetivos:
+
+- Criar botão "Próxima Rodada".
+- Executar partidas da rodada atual.
+- Gerar resultados.
+- Atualizar classificação.
+- Registrar histórico de partidas.
+- Avançar temporada.
 
 ---
 
@@ -592,8 +670,16 @@ Considere todas as decisões deste documento como oficiais.
 
 Não proponha mudanças sem justificativa técnica.
 
-Continue o desenvolvimento exatamente da etapa indicada.
+O projeto atualmente está na Etapa 4 — Implementação da Base do Sistema.
+
+O calendário já possui estrutura:
+
+Season → Round[] → Fixture[]
+
+Continue exatamente da próxima tarefa indicada.
 
 Mantenha a documentação sincronizada com a implementação.
 
-Seu objetivo não é apenas gerar código, mas conduzir o desenvolvimento do Touchline até uma versão completa e jogável, mantendo qualidade de arquitetura, organização e escalabilidade.
+Não gere código antes de entender o estado atual.
+
+Seu objetivo é conduzir o desenvolvimento do Touchline até uma versão completa e jogável, mantendo qualidade de arquitetura, organização e escalabilidade.

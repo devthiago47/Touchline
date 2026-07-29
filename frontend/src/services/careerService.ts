@@ -50,8 +50,8 @@ export const careerService = {
         league.clubs,
         league.id
       );
-      
-      console.log("CALENDÁRIO GERADO:", rounds);
+
+    console.log("CALENDÁRIO GERADO:", rounds);
 
 
     const career: Career = {
@@ -75,6 +75,8 @@ export const careerService = {
       currentSeason: {
 
         year: 2026,
+
+        currentRound: 1,
 
         rounds,
 
